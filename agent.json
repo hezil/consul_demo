@@ -12,7 +12,7 @@
         {
             "name": "HTTP",
             "address": "127.0.0.1",
-            "port": 80
+            "port": 30036
         }
     ],
     "checks": [
