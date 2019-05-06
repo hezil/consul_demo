@@ -8,12 +8,12 @@ RAM_UTILIZATION=${RAM_UTILIZATION%.*}
 
 echo "RAM: "$RAM_UTILIZATION"%"
 
-if (( $RAM_UTILIZATION > 75 ));
+if (( $RAM_UTILIZATION > 85 ));
 then
     exit 2
 fi
 
-if (( $RAM_UTILIZATION > 50 ));
+if (( $RAM_UTILIZATION > 75 ));
 then
     exit 1
 fi
