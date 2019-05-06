@@ -8,8 +8,8 @@ apt-get update
 apt-get install git unzip -y
 cd /root
 wget https://releases.hashicorp.com/consul/0.5.2/consul_0.5.2_linux_amd64.zip
-unzip 0.5.2_linux_amd64.zip
-rm -f 0.5.2_linux_amd64.zip
+unzip consul_0.5.2_linux_amd64.zip
+rm -f consul_0.5.2_linux_amd64.zip
 mv consul /usr/bin/
 git clone https://github.com/andrewpuch/consul_demo.git
 ```
@@ -18,8 +18,8 @@ git clone https://github.com/andrewpuch/consul_demo.git
 # Bootstrap / Web UI Server
 ---------------------------
 wget https://releases.hashicorp.com/consul/0.5.2/consul_0.5.2_web_ui.zip
-unzip 0.5.2_web_ui.zip
-rm -f 0.5.2_web_ui.zip
+unzip consul_0.5.2_web_ui.zip
+rm -f consul_0.5.2_web_ui.zip
 cd /root/consul_demo
 cp bootstrap.json config.json
 
