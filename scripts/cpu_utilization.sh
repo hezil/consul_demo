@@ -5,12 +5,12 @@ CPU_UTILIZATION=${CPU_UTILIZATION%.*}
 
 echo "CPU: "$CPU_UTILIZATION"%"
 
-if (( $CPU_UTILIZATION > 75 ));
+if (( $CPU_UTILIZATION > 85 ));
 then
     exit 2
 fi
 
-if (( $CPU_UTILIZATION > 50 ));
+if (( $CPU_UTILIZATION > 75 ));
 then
     exit 1
 fi
