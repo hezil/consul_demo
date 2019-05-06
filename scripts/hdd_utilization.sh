@@ -5,12 +5,12 @@ HDD_UTILIZATION=${HDD_UTILIZATION%.*}
 
 echo "HDD: "$HDD_UTILIZATION"%"
 
-if (( $HDD_UTILIZATION > 75 ));
+if (( $HDD_UTILIZATION > 85 ));
 then
     exit 2
 fi
 
-if (( $HDD_UTILIZATION > 50 ));
+if (( $HDD_UTILIZATION > 75 ));
 then
     exit 1
 fi
